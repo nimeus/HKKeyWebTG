@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const EVENTS_DELAY = 20000;
+    const EVENTS_DELAY = 53000;
 
     const games = {
         1: {
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const generatedKeysTitle = document.getElementById('generatedKeysTitle');
     const gameSelect = document.getElementById('gameSelect');
     const copyStatus = document.getElementById('copyStatus');
-    const sourceCode = document.getElementById('sourceCode');
     const gameSelectGroup = document.getElementById('gameSelectGroup');
     const keyCountGroup = document.getElementById('keyCountGroup');
 
@@ -221,10 +220,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show the form sections again
         gameSelectGroup.style.display = 'block';
         keyCountGroup.style.display = 'block';
-    });
-
-    sourceCode.addEventListener('click', () => {
-        window.open('https://github.com/ShafiqSadat/HamsterKeyGenWeb', '_blank');
     });
 
     const generateClientId = () => {
